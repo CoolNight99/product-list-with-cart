@@ -268,7 +268,7 @@ function confirmOrder() {
         const addToCartBtnAll = document.querySelectorAll(".add-to-cart-btn");
 
         addToCartBtnAll.forEach(btn => {
-            btn.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" class="mx-2" />Add to Cart`;
+            btn.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" class="mx-2" alt="add to cart icon"/>Add to Cart`;
             btn.style.backgroundColor = "";
         });
 
