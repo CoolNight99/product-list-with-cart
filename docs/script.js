@@ -34,7 +34,7 @@ for (let i = 0; i < data.length; i++) {
             <div class="card h-100 position-relative">
                 ${foodImgHTML}
                 <button class="btn add-to-cart-btn position-absolute px-3 py-2 d-flex align-items-center" id="add-to-cart-${sanitizedName}">
-                    <img src="./assets/images/icon-add-to-cart.svg" class="mx-2" />Add to Cart
+                    <img src="./assets/images/icon-add-to-cart.svg" class="mx-2" alt="add to cart icon"/>Add to Cart
                 </button>
                 <div class="card-body px-0">
                     <p class="food-category">${data[i].category}</p>
@@ -80,7 +80,7 @@ for (let i = 0; i < data.length; i++) {
                 delete cart[sanitizedName];
 
                 // reset addToCartBtn if qty is 0
-                addToCartBtn.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" class="mx-2" />Add to Cart`;
+                addToCartBtn.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" class="mx-2" alt="add to cart icon"/>Add to Cart`;
                 addToCartBtn.style.backgroundColor = "";
 
                 //remove border from img of food
@@ -122,7 +122,7 @@ for (let i = 0; i < data.length; i++) {
             currentQty = 0;
             delete cart[sanitizedName];
 
-            addToCartBtn.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" class="mx-2" />Add to Cart`;
+            addToCartBtn.innerHTML = `<img src="./assets/images/icon-add-to-cart.svg" class="mx-2" alt="add to cart icon"/>Add to Cart`;
             addToCartBtn.style.backgroundColor = "";
             foodImg.style.border = "none";
 
