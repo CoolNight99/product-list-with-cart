@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+body {
+    font-family: "Red Hat Text", sans-serif !important;
+    background-color: hsl(13, 31%, 94%) !important;
+
+    main {
+        h1 {
+            font-weight: 700;
+            color: hsl(14, 65%, 9%);
+        }
+
+        .container {
+            .product-grid {
+                .product-grid-col {
+                    .product-grid-row {
+                        .col {
+                            .card {
+                                background-color: hsl(13, 31%, 94%);
+                                border: none;
+
+                                .card-img {
+                                    width: 100%;
+                                    object-fit: cover;
+                                    display: block;
+                                }
+
+                                .add-to-cart-btn {
+                                    bottom: 6.875rem;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    border: 0.0625rem solid hsl(12, 20%, 44%);
+                                    border-radius: 3.125rem;
+                                    font-weight: 600;
+                                    background-color: hsl(20, 50%, 98%);
+                                    font-size: 0.875rem;
+                                    white-space: nowrap;
+                                    z-index: 2;
+                                    transition: background-color 0.2s;
+
+                                    .change-qty-icon-div {
+                                        border: 0.0625rem solid hsl(20, 50%, 98%);
+                                        padding: 10px;
+                                        height: 1.25rem;
+                                        width: 1.25rem;
+                                        border-radius: 50%;
+                                        transition: background-color 0.2s;
+                                    }
+
+                                    .change-qty-icon-div:hover {
+                                        background-color: hsl(20, 50%, 98%);
+
+                                        .change-qty-icon {
+                                            fill: hsl(14, 86%, 42%);
+                                        }
+                                    }
+
+                                    .qty {
+                                        color: hsl(20, 50%, 98%);
+                                    }
+                                }
+
+                                .add-to-cart-btn:hover {
+                                    color: hsl(14, 86%, 42%);
+                                    border-color: hsl(14, 86%, 42%);
+                                }
+
+                                ;
+
+                                .card-body {
+                                    line-height: 0.625rem;
+
+                                    .food-category {
+                                        color: hsl(7, 20%, 60%);
+                                        font-weight: 400;
+                                    }
+
+                                    .food-title {
+                                        font-size: 1rem;
+                                        font-weight: 600;
+                                        color: hsl(14, 65%, 9%);
+                                    }
+
+                                    .food-price {
+                                        color: hsl(14, 86%, 42%);
+                                        font-weight: 600;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+
+            .cart-col {
+                background-color: hsl(20, 50%, 98%);
+                border-radius: 0.3125rem;
+
+                .cart-heading {
+                    font-size: 22px;
+                    font-weight: 700;
+                    color: hsl(14, 86%, 42%);
+                }
+
+                .cart-col-body {
+                    .cart-notice {
+                        font-size: 0.875rem;
+                        font-weight: 600;
+                        color: hsl(12, 20%, 44%);
+                    }
+
+                    .cart-row {
+                        line-height: 0.9375rem;
+
+                        .order-details {
+                            .cart-food-title {
+                                font-size: 0.9375rem;
+                                font-weight: 600;
+                                color: hsl(14, 65%, 9%);
+                            }
+    
+                            .qty-added {
+                                color: hsl(14, 86%, 42%);
+                                font-weight: 600;
+                            }
+    
+                            .individual-food-price {
+                                color: hsl(14, 25%, 72%);
+                                font-weight: 400;
+                            }
+    
+                            ;
+    
+                            .price-per-food {
+                                color: hsl(7, 20%, 60%);
+                                font-weight: 600;
+                            }
+                        }
+
+                        .remove-item-btn {
+                            border: 0.0625rem solid hsl(14, 25%, 72%);
+                            padding: 10px;
+                            height: 1.25rem;
+                            width: 1.25rem;
+                            border-radius: 50%;
+                            background-color: hsl(20, 50%, 98%);
+                        }
+
+                        .remove-item-btn:hover {
+                            border-color: hsl(14, 65%, 9%);
+                        }
+                    }
+
+                    .order-total-div {
+                        .order-total-p {
+                            color: hsl(12, 20%, 44%);
+                            font-weight: 600;
+                            font-size: 0.9375rem;
+                        }
+
+                        .total-price {
+                            font-size: 25px;
+                            font-weight: 700;
+                            color: hsl(14, 65%, 9%);
+                        }
+
+                    }
+
+                    .carbon-neutral-div {
+                        background-color: hsl(13, 31%, 94%);
+                        font-size: 0.875rem;
+                        color: hsl(14, 65%, 9%);
+                        font-weight: 400;
+                        border-radius: 0.3125rem;
+
+                        .carbon-neutral {
+                            font-weight: 700;
+                        }
+                    }
+
+                    .confirm-order-btn {
+                        color: hsl(20, 50%, 98%);
+                        background-color: hsl(14, 86%, 42%);
+                        border-radius: 3.125rem;
+                        font-weight: 600;
+                        transition: background-color 0.2s;
+                    }
+
+                    .confirm-order-btn:hover {
+                        background-color: hsl(12, 20%, 44%);
+                    }
+                }
+            }
+        }
+    }
+
+    section {
+        .backdrop {
+            z-index: 99;
+            position: fixed;
+            inset: 0;
+            background-color: rgba(0, 0, 0, 0.5);
+            display: none;
+
+            .order-confirmation-div {
+                z-index: 100;
+                display: none;
+                background-color: hsl(20, 50%, 98%);
+                width: 30%;
+                top: 25%;
+                left: 30%;
+                border-radius: 0.3125rem;
+    
+                .order-confirmed-icon {
+                    width: 3.125rem;
+                }
+    
+                .order-confirmed {
+                    color: hsl(14, 65%, 9%);
+                    font-weight: 700;
+                }
+    
+                .food-ordered {
+                    max-height: 15.625rem;
+    
+                    .order-details {
+                        line-height: 0.9375rem;
+        
+                        .cart-food-title {
+                            font-size: 0.9375rem;
+                            font-weight: 600;
+                            color: hsl(14, 65%, 9%);
+                        }
+            
+                        .qty-added {
+                            color: hsl(14, 86%, 42%);
+                            font-weight: 600;
+                        }
+            
+                        .individual-food-price {
+                            color: hsl(14, 25%, 72%);
+                            font-weight: 400;
+                        }
+                    }
+    
+                    .price-per-food {
+                        color: hsl(14, 65%, 9%);
+                        font-weight: 600;
+                    }
+                }
+    
+                .start-new-order-btn {
+                    color: hsl(20, 50%, 98%);
+                    background-color: hsl(14, 86%, 42%);
+                    border-radius: 3.125rem;
+                    font-weight: 600;
+                    transition: background-color 0.2s;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    footer {
+        .attribution {
+            font-size: 0.6875rem;
+            bottom: 0;
+            right: 0.625rem;
+
+            a {
+                color: hsl(228, 45%, 44%);
+            }
+        }
+    }
+}
+
+@media (max-width: 576px) {
+    
+}

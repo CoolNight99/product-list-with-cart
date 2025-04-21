@@ -1,0 +1,207 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap");
+body {
+  font-family: "Red Hat Text", sans-serif !important;
+  background-color: hsl(13, 31%, 94%) !important;
+}
+body main h1 {
+  font-weight: 700;
+  color: hsl(14, 65%, 9%);
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card {
+  background-color: hsl(13, 31%, 94%);
+  border: none;
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .card-img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .add-to-cart-btn {
+  bottom: 6.875rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 0.0625rem solid hsl(12, 20%, 44%);
+  border-radius: 3.125rem;
+  font-weight: 600;
+  background-color: hsl(20, 50%, 98%);
+  font-size: 0.875rem;
+  white-space: nowrap;
+  z-index: 2;
+  transition: background-color 0.2s;
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .add-to-cart-btn .change-qty-icon-div {
+  border: 0.0625rem solid hsl(20, 50%, 98%);
+  padding: 10px;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .add-to-cart-btn .change-qty-icon-div:hover {
+  background-color: hsl(20, 50%, 98%);
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .add-to-cart-btn .change-qty-icon-div:hover .change-qty-icon {
+  fill: hsl(14, 86%, 42%);
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .add-to-cart-btn .qty {
+  color: hsl(20, 50%, 98%);
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .add-to-cart-btn:hover {
+  color: hsl(14, 86%, 42%);
+  border-color: hsl(14, 86%, 42%);
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .card-body {
+  line-height: 0.625rem;
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .card-body .food-category {
+  color: hsl(7, 20%, 60%);
+  font-weight: 400;
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .card-body .food-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+}
+body main .container .product-grid .product-grid-col .product-grid-row .col .card .card-body .food-price {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+body main .container .cart-col {
+  background-color: hsl(20, 50%, 98%);
+  border-radius: 0.3125rem;
+}
+body main .container .cart-col .cart-heading {
+  font-size: 22px;
+  font-weight: 700;
+  color: hsl(14, 86%, 42%);
+}
+body main .container .cart-col .cart-col-body .cart-notice {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: hsl(12, 20%, 44%);
+}
+body main .container .cart-col .cart-col-body .cart-row {
+  line-height: 0.9375rem;
+}
+body main .container .cart-col .cart-col-body .cart-row .order-details .cart-food-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+}
+body main .container .cart-col .cart-col-body .cart-row .order-details .qty-added {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+body main .container .cart-col .cart-col-body .cart-row .order-details .individual-food-price {
+  color: hsl(14, 25%, 72%);
+  font-weight: 400;
+}
+body main .container .cart-col .cart-col-body .cart-row .order-details .price-per-food {
+  color: hsl(7, 20%, 60%);
+  font-weight: 600;
+}
+body main .container .cart-col .cart-col-body .cart-row .remove-item-btn {
+  border: 0.0625rem solid hsl(14, 25%, 72%);
+  padding: 10px;
+  height: 1.25rem;
+  width: 1.25rem;
+  border-radius: 50%;
+  background-color: hsl(20, 50%, 98%);
+}
+body main .container .cart-col .cart-col-body .cart-row .remove-item-btn:hover {
+  border-color: hsl(14, 65%, 9%);
+}
+body main .container .cart-col .cart-col-body .order-total-div .order-total-p {
+  color: hsl(12, 20%, 44%);
+  font-weight: 600;
+  font-size: 0.9375rem;
+}
+body main .container .cart-col .cart-col-body .order-total-div .total-price {
+  font-size: 25px;
+  font-weight: 700;
+  color: hsl(14, 65%, 9%);
+}
+body main .container .cart-col .cart-col-body .carbon-neutral-div {
+  background-color: hsl(13, 31%, 94%);
+  font-size: 0.875rem;
+  color: hsl(14, 65%, 9%);
+  font-weight: 400;
+  border-radius: 0.3125rem;
+}
+body main .container .cart-col .cart-col-body .carbon-neutral-div .carbon-neutral {
+  font-weight: 700;
+}
+body main .container .cart-col .cart-col-body .confirm-order-btn {
+  color: hsl(20, 50%, 98%);
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 3.125rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+}
+body main .container .cart-col .cart-col-body .confirm-order-btn:hover {
+  background-color: hsl(12, 20%, 44%);
+}
+body section .backdrop {
+  z-index: 99;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+body section .backdrop .order-confirmation-div {
+  z-index: 100;
+  display: none;
+  background-color: hsl(20, 50%, 98%);
+  width: 30%;
+  top: 25%;
+  left: 30%;
+  border-radius: 0.3125rem;
+}
+body section .backdrop .order-confirmation-div .order-confirmed-icon {
+  width: 3.125rem;
+}
+body section .backdrop .order-confirmation-div .order-confirmed {
+  color: hsl(14, 65%, 9%);
+  font-weight: 700;
+}
+body section .backdrop .order-confirmation-div .food-ordered {
+  max-height: 15.625rem;
+}
+body section .backdrop .order-confirmation-div .food-ordered .order-details {
+  line-height: 0.9375rem;
+}
+body section .backdrop .order-confirmation-div .food-ordered .order-details .cart-food-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: hsl(14, 65%, 9%);
+}
+body section .backdrop .order-confirmation-div .food-ordered .order-details .qty-added {
+  color: hsl(14, 86%, 42%);
+  font-weight: 600;
+}
+body section .backdrop .order-confirmation-div .food-ordered .order-details .individual-food-price {
+  color: hsl(14, 25%, 72%);
+  font-weight: 400;
+}
+body section .backdrop .order-confirmation-div .food-ordered .price-per-food {
+  color: hsl(14, 65%, 9%);
+  font-weight: 600;
+}
+body section .backdrop .order-confirmation-div .start-new-order-btn {
+  color: hsl(20, 50%, 98%);
+  background-color: hsl(14, 86%, 42%);
+  border-radius: 3.125rem;
+  font-weight: 600;
+  transition: background-color 0.2s;
+  border: none;
+}
+body footer .attribution {
+  font-size: 0.6875rem;
+  bottom: 0;
+  right: 0.625rem;
+}
+body footer .attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/*# sourceMappingURL=styles.css.map */
